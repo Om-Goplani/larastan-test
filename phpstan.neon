@@ -1,0 +1,23 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+rules:
+    - App\Rules\PHPStan\Safety\NoGenericExceptionRule
+    - App\Rules\PHPStan\Domain\ForceBaseModelRule
+    - App\Rules\PHPStan\Layers\EncapsulatePersistenceRule
+    - App\Rules\PHPStan\WorkFlows\PersistMustValidateRule
+
+
+
+
+parameters:
+    paths:
+        - app/
+
+    excludePaths:
+        - vendor/*
+        - storage/*
+        - bootstrap/cache/*
+        - app/Rules*
+
+    level: 7
