@@ -20,4 +20,4 @@ parameters:
         - bootstrap/cache/*
         - app/Rules*
 
-    level: 7
+    level: 1
