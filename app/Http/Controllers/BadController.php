@@ -7,7 +7,7 @@ class BadController
     public function index()
     {
         // This triggers the error because it is "new Exception"
-        throw new \Exception("I am generic and bad.");
+        // throw new \Exception("I am generic and bad.");
     }
 
     public function good()

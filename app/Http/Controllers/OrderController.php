@@ -7,12 +7,12 @@ use App\Models\GoodOrder;
 
 class OrderController extends Controller
 {
-    public function store()
-    {
-        $order = new GoodOrder();
-        $order->name = 'Test';
+    // public function store()
+    // {
+    //     $order = new GoodOrder();
+    //     $order->name = 'Test';
 
 
-        $order->save();
-    }
+    //     $order->save();
+    // }
 }

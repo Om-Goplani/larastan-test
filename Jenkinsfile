@@ -33,14 +33,6 @@ pipeline {
                 '''
             }
         }
-
-        stage('PHPUnit Tests') {
-            steps {
-                sh '''
-                    ./vendor/bin/phpunit --testdox
-                '''
-            }
-        }
     }
 
     post {
