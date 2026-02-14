@@ -3,7 +3,7 @@ includes:
 
 rules:
     - App\Rules\PHPStan\Safety\NoGenericExceptionRule
-    - App\Rules\PHPStan\Layers\EncapsulatePersistenceRule
+    - App\Rules\PHPStan\Domain\ForceBaseModelRule
     - App\Rules\PHPStan\WorkFlows\PersistMustValidateRule
 
 
